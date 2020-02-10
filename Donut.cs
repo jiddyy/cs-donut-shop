@@ -1,10 +1,12 @@
-﻿namespace cs_donut_shop
+﻿using System.Collections.Generic;
+
+namespace cs_donut_shop
 {
     class Donut
     {
-        public string Topping { get; set; }
-        public string Flavor { get; set; }
-        public Donut(string topping, string flavor)
+        public List<string> Topping { get; set; }
+        public List<string> Flavor { get; set; }
+        public Donut(List<string> topping, List<string> flavor)
         {
             Topping = topping;
             Flavor = flavor;
